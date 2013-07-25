@@ -13,6 +13,13 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <style type="text/css">
+      /* Splash image */
+      .masthead {
+        background: url("http://i.imgur.com/1a6f7NG.jpg");
+        background-size: 100% auto;
+        padding-bottom: 50px;
+        background-position: center 25%;
+      }
       @media (min-width: 980px) {
         body {
           padding-top: 40px;
@@ -23,10 +30,13 @@
         .linediv-r {
           border-left: 1px white solid;
         }
+        .masthead {
+          background-size: 100% auto;
+        }
       }
-      @media (max-width: 480px) {
+      @media (max-width: 601px) {
         .copy {
-          padding: 2.5% 10%;
+          padding: 2.5% 5%;
         }
         .linediv-l {
           border-bottom: 1px white solid;
@@ -34,18 +44,23 @@
         .linediv-r {
           border-top: 1px white solid;
         }
+        .masthead {
+          background-size: 200% auto;
+          margin-right: -20px;
+          margin-left: -20px;
+        }
       }
-      
-      /* Splash image */
-      .masthead {
-        background: url("http://i.imgur.com/1a6f7NG.jpg");
-        background-size: 100% auto;
-        padding-bottom: 50px;
-        background-position: center -100px;
+      @media (max-width: 480px) {
+        .masthead {
+          background-size: 300% auto;
+        }
+      }
+      .navbar-fixed-top {
+        margin-bottom: 0px;
       }
       h1 {
         font-size: 72px;
-        padding-top: 40px;
+        padding-top: 3%;
       }
       
       body {
@@ -88,26 +103,20 @@
       .statistics h3, .statistics p {
         color: white;
       }
-      .video {
-      /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
       
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
         padding-bottom: 2.5%;
-        text-align: justify;
+        text-align: left;
       }
       .asset {
         padding: 2.5% 0%;
+        text-align: center;
       }
       .footer {
         color: #ccc;
         text-align: center;
-        background-color: #333;
-        background-size: 100% auto;
       }
       .footer p {
         font-size: 11px;
@@ -257,7 +266,7 @@
     </div>
     <div class="row-fluid footer">
       <div class="span12">
-	<p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-weight: 400; color: #DDD; font-size: 14px; line-height: 5px;">{AQ}</p>
+	<p style="color: #AAA; font-size: 14px; line-height: 5px;">{AQ}</p>
 	<p>This work is licensed under CC By-SA 3.0</p>
       </div>
     </div>
