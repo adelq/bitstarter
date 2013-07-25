@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Bitstarter</title>
+    <title>Studyr</title>
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css">
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <style type="text/css">
       @media (min-width: 980px) {
         body {
-          padding-top: 60px;
+          padding-top: 40px;
         }
         .linediv-l {
           border-right: 1px white solid;
@@ -35,6 +35,19 @@
           border-top: 1px white solid;
         }
       }
+      
+      /* Splash image */
+      .masthead {
+        background: url("http://i.imgur.com/1a6f7NG.jpg");
+        background-size: 100% auto;
+        padding-bottom: 50px;
+        background-position: center -100px;
+      }
+      h1 {
+        font-size: 72px;
+        padding-top: 40px;
+      }
+      
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
@@ -48,7 +61,7 @@
         line-height: 30px;
       }
       .heading, .subheading {
-        font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+        font-family: "PT Sans", Helvetica, Arial, sans-serif;
         text-align: center;
       }
 
@@ -65,6 +78,9 @@
       }
       .navigation, .pitch, .section1, .section2, .faq, .footer {
         padding: 10px 0px;
+      }
+      .faq {
+        padding-bottom: 60px;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
@@ -90,6 +106,8 @@
       .footer {
         color: #ccc;
         text-align: center;
+        background-color: #333;
+        background-size: 100% auto;
       }
       .footer p {
         font-size: 11px;
@@ -120,17 +138,19 @@
       </div>
     </div>
     </div>
-    <div class="container">
+    <div class="masthead">
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Studyr App</h1>
+	  <h1>Studyr</h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
 	<div class="span12">
-	  <p class="lead">This is my first bitstarter project.</p>
+	  <p class="lead">Your personal academic trainer</>
 	</div>
-      </div>
+      </div>      
+    </div>
+    <div class="container">
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -140,25 +160,25 @@
 	    <div class="statistics">
 	      <div class="span4">
 		<div class="linediv-l">
-		  <h3>1000</h3> <p>backers</p>
+		  <h3>2</h3> <p>backers</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-c">
-		  <h3>$6000</h3> <p>of $10,000</p>
+		  <h3>$100</h3> <p>of $5,000</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-r">
-		  <h3>10</h3> <p>days left</p>
+		  <h3>30</h3> <p>days left</p>
 		</div>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="span10 offset1">
 	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width:60%;"></div>
-	      <div class="bar bar-warning" style="width:40%;"></div>
+	      <div class="bar bar-success" style="width:4%;"></div>
+	      <div class="bar bar-warning" style="width:96%;"></div>
 	    </div>
 	  </div>
 	  <div class="span6 offset3 order">
@@ -171,39 +191,32 @@
 	</div>
       </div>
       <div class="row-fluid section1">
+	<div class="span5 offset1 copy copy-right">
+	  <h3>Studyr learns from you</h3>
+	  <p>
+	    Studyr is an innovative app to plan your study schedule based on your personal learning habits to create a interactive lesson plans designed for you.
+	  </p>
+	</div>
+	<div class="span5 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+      </div>
+      <div class="row-fluid section2">
 	<div class="span5 offset1 asset">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
 	<div class="span5 copy">
+	  <h3>Studyr Packs save time studying for exams</h3>
 	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+	    Keeping track of all the objectives is tough, so Studyr does it all for you, making sure you know everything for the final exam.
 	  </p>
 	</div>
       </div>
-      <div class="row-fluid section2">
+      <div class="row-fluid section3">
 	<div class="span5 offset1 copy copy-right">
+	  <h3>Studyr is Modular</h3>
 	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+	    Studyr is designed from the start for the community - anybody can release a Studyr Pack with full access to the great features that the Studyr core engine offers. 
 	  </p>
 	</div>
 	<div class="span5 asset">
@@ -212,39 +225,40 @@
       </div>
       <div class="row-fluid faq">
 	<div class="span10 offset1">
-	  <h3>FAQ</h3>
+	  <h2>FAQ</h2>
 	  <div class="accordion" id="accordion2">
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		  What does FAQ stand for?
+		  Will Studyr be open source?
 		</a>
 	      </div>
 	      <div id="collapseOne" class="accordion-body collapse">
 		<div class="accordion-inner">
-		  Frequently Asked Questions.
+		  If the funding goals are met, Studyr will be open sourced under the GPLv2 license. However, additional Studyr Packs released by the community may not fall under the same conditions.
 		</div>
 	      </div>
 	    </div>
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		  What editor do you use?
+		  What technologies are being used to build Studyr?
 		</a>
 	      </div>
 	      <div id="collapseTwo" class="accordion-body collapse">
 		<div class="accordion-innder">
-		  GNU Emacs.
+		  The initial release of Studyr will be a webapp available on all platforms (Windows/Mac/Linux/Android/iOS), and designed with mobiles first. In due time, these apps may be ported to native applications if there is sufficient demand.
 		</div>
 	      </div>
 	    </div>
 	  </div>
 	</div>
       </div>
-      <div class="row-fluid footer">
-	<div class="span12">
-	  <p>This work is licensed under CC By-SA 3.0</p>
-	</div>
+    </div>
+    <div class="row-fluid footer">
+      <div class="span12">
+	<p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-weight: 400; color: #DDD; font-size: 14px; line-height: 5px;">{AQ}</p>
+	<p>This work is licensed under CC By-SA 3.0</p>
       </div>
     </div>
   </body>
